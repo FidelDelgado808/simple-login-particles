@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login to site</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+  <!-- particles.js container -->
+  <div id="particles-js"></div>
+  <!-- stats - count particles -->
+  <div class="count-particles">
+    <span class="js-count-particles"></span>
+  </div>
+  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- stats.js lib -->
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+  <form action="access_approved.php" method="post">
+
+
+    <div>
+      <script> src = "app.js" ></script>
+      <script src="particles.js"></script>
+    </div>
+
+    <div class="container">
+      <div>
+        <p class="login-highlight">Login</p>
+      </div>
+
+      <!-- Username -->
+
+      <div> <label for="uname" class="inputfield"></label></div>
+
+      <div> <input type="text" class="usernameInput" placeholder="Username" name="uname" required></div>
+
+
+      <!-- Password -->
+
+      <label for="psw" class="inputfield"></label>
+
+      <div class="input-password">
+
+        <input type="password" class="passwordInput" name="psw" placeholder="Password" required>
+        <div class="input-password-icon input-password-icon-visibility" onclick="revealPassword()">
+
+
+        </div>
+      </div>
+
+      <!-- Show Password Switch -->
+
+      <div> <label class="switch"></label></div>
+
+      <div> <button class="button" type="submit">Login</button>
+
+      </div>
+
+      <div>
+
+      </div>
+
+      <script>
+
+          function revealPassword() {
+            var passwordInput = document.querySelector(".passwordInput");
+            if (document.querySelector(".passwordInput").type === "password") {
+              passwordInput.type = "text";
+
+              document.querySelector(".input-password-icon").classList.add("input-password-icon-hidden");
+              document.querySelector(".input-password-icon").classList.remove("input-password-icon-visibility");
+
+            } else {
+              passwordInput.type = "password";
+
+              document.querySelector(".input-password-icon").classList.add("input-password-icon-visibility");
+              document.querySelector(".input-password-icon").classList.remove("input-password-icon-hidden");
+
+
+            }
+          };
+
+      </script>
+    </div>
+  </form>
+  </form>
+
+  </div>
+
+</body>
+
+</html>
+
+<!-- to do
+
+
+* Desktop compatability
+* CSS Specificity (hierarchy)
+
+ -->

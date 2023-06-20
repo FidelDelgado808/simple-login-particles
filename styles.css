@@ -1,0 +1,134 @@
+#particles-js {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+.login-highlight {
+  color: #000;
+  font-family: 'Roboto', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: xx-large;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  font-family: 'Roboto', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+
+}
+
+@media screen and (min-width: 961px) {
+  .container {
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+  }
+}
+
+.input-password-icon {
+  content: "";
+  position: absolute;
+  left: 88%;
+  top: 37%;
+  bottom: 0;
+  width: 30px;
+}
+
+.input-password-icon-visibility {
+  background: url("./images/visibility.svg") center / contain no-repeat;
+}
+
+.input-password-icon-hidden {
+  background: url("./images/visibility_off.svg") center / contain no-repeat;
+
+}
+
+@media screen and (min-width: 961px) {
+  .input-password-icon-visibility, .input-password-icon-hidden {
+    content: "";
+    position: absolute;
+    left: 59%;
+    top: 36%;
+    bottom: 0;
+    width: 30px;
+  }
+
+  .passwordInput,
+  .usernameInput {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.1ch;
+  }
+
+  .inputfield {
+    width: 20px;
+    padding: 5px;
+    margin: 5px 0;
+
+  }
+
+  input[type=text],
+  input[type=password] {
+    padding: 17px;
+    margin: 0 px 0;
+    width: 370px;
+  }
+
+  input[type=text]:focus,
+  input[type=password]:focus {
+    background-color: #7e7c7a46;
+    justify-content: center;
+  }
+
+  .border-bottom-input {
+    border: 10;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+
+  }
+
+  .rounded-input {
+    padding: 10px;
+    border: radius 10px;
+  }
+
+  .button {
+    /* remove default behavior */
+    appearance: none;
+    -webkit-appearance: none;
+
+    /* usual styles */
+    width: 100%;
+    padding: 23px;
+    margin: 5px;
+    border: none;
+    background-color: #3F51B5;
+    color: #fff;
+    font-size: large;
+    font-weight: 200px;
+    border-radius: 5px;
+
+  }
+
+  /* ---- reset ---- */
+  body {
+    margin: 0;
+  }
+
+  /* ---- particles.js container ---- */
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #E4A5FF;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
